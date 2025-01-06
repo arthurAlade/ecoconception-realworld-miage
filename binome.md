@@ -5,5 +5,5 @@ Propriétaire repo git :
 - Prénom : Arthur
 
 Binome :
-- Nom :
-- Prénom :
+- Nom : SALOUH
+- Prénom : Ayman
