@@ -3,7 +3,7 @@ html, body {
     height: 100%; /* Assure que la hauteur couvre toute la page */
     margin: 0; /* Supprime les marges par défaut */
   }
-  
+
   body {
     background-image: url("assets/images/background.jpg");
     background-size: cover;
@@ -11,3 +11,18 @@ html, body {
     background-position: center;
     font-family: 'Foldit', sans-serif;
   }
+
+.small-gif {
+  width: 50px;
+  height: 50px;
+}
+
+.medium-gif {
+  width: 100px;
+  height: 100px;
+}
+
+.large-gif {
+  width: 200px;
+  height: 200px;
+}

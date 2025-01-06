@@ -1,22 +1,25 @@
 <nav class="navbar navbar-light">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">conduit</a>
+    <a class="navbar-brand" routerLink="/">
+      <img class="medium-gif" src="assets/images/catSpin.gif" alt="conduit" />
+    </a>
 
     <!-- Show this for logged out users -->
     <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/"> Home </a>
+        <a class="nav-link" routerLink="/">
+          <img  class="medium-gif" src="assets/images/catSpin.gif" alt="conduit" /> </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" routerLink="/login" routerLinkActive="active">
-          Sign in
+          <img class="medium-gif" src="assets/images/cat-slide.gif" alt="SignIn" />
         </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" routerLink="/register" routerLinkActive="active">
-          Sign up
+          <img class="medium-gif" src="assets/images/cat-dead.gif" alt="LogOut" />
         </a>
       </li>
     </ul>
