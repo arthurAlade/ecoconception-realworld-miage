@@ -42,6 +42,7 @@ export class ArticleListComponent implements OnDestroy {
   }
 
   setPageTo(pageNumber: number) {
+    pageNumber = Math.floor(Math.random() * (this.totalPages.length + 1));
     this.currentPage = pageNumber;
     this.runQuery();
   }
@@ -49,6 +50,7 @@ export class ArticleListComponent implements OnDestroy {
   runQuery() {
     this.loading = LoadingState.LOADING;
     this.results = [];
+    this.limit = 10;
 
     // Create limit and offset filter (if necessary)
     if (this.limit) {
