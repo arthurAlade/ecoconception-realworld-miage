@@ -20,7 +20,8 @@
       *ngFor="let pageNumber of totalPages"
     >
       <button class="page-link" (click)="setPageTo(pageNumber)">
-        {{ pageNumber }}
+        <img class="small-gif" src="assets/images/cat-{{ catNumber }}.gif" />
+
       </button>
     </li>
   </ul>

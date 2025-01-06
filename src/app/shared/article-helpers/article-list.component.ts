@@ -23,8 +23,10 @@ export class ArticleListComponent implements OnDestroy {
   loading = LoadingState.NOT_LOADED;
   LoadingState = LoadingState;
   destroy$ = new Subject<void>();
+  catNumber : number = 1;
 
   @Input() limit!: number;
+
   @Input()
   set config(config: ArticleListConfig) {
     if (config) {
@@ -45,6 +47,7 @@ export class ArticleListComponent implements OnDestroy {
     pageNumber = Math.floor(Math.random() * (this.totalPages.length + 1));
     this.currentPage = pageNumber;
     this.runQuery();
+    this.catNumber = Math.floor(Math.random() * (4 + 1)) +1;
   }
 
   runQuery() {
