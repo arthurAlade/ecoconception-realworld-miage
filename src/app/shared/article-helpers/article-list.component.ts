@@ -50,7 +50,7 @@ export class ArticleListComponent implements OnDestroy {
   runQuery() {
     this.loading = LoadingState.LOADING;
     this.results = [];
-    this.limit = 10;
+    this.limit = 1;
 
     // Create limit and offset filter (if necessary)
     if (this.limit) {
